@@ -66,7 +66,6 @@ span{
     margin: auto;
     background:linear-gradient( to top to left  ,#303030e1 ,#ffff);
     border: 1px solid #303030e1;
-    align-items: center;
     border-radius: 10px;
     background-color: blanchedalmond;
 }
