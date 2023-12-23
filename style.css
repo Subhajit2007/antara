@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import
+url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;500&display=swap');
+*{
+    font-family: 'Roboto Slab', serif;
+    box-sizing: border-box;
+}
+
+#navbar{
+    padding-top: 20px;
+    position: sticky;
+    backdrop-filter: blur(2px);
+    background:linear-gradient(to top right,#303030e1 ,#ffff);
+    
+}
+.h1 {
+   padding-left: 30px;
+   padding-bottom: 10px;
+   font-weight: bold;
+   font-size: 38px;
+   font-family: 'Prompt', serif;
+}
+li{
+    display: inline;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+li a ,a{
+    color: black;
+    text-decoration: none;
+}
+#author-img{
+    height: 100px;
+    position: fixed;
+    top: 80%;
+    border-radius: 50%;
+}
+#advertisement{
+    background-color: #1e1e1e;
+    overflow: auto;
+}
+#ad{
+    height: 115px;
+    padding: 10px 5px;
+}
+#ad-discription{
+    color: white;
+}
+#about-img{
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 50%;
+}
+span{
+    text-align: center;
+}
+.massage-box{
+    max-height: 80vh;
+    max-width: 90vw;
+    padding: 10%;
+    margin: auto;
+    background:linear-gradient( to top to left  ,#303030e1 ,#ffff);
+    border: 1px solid #303030e1;
+    align-items: center;
+    border-radius: 10px;
+    background-color: blanchedalmond;
+}
+.msg-p{
+    margin: 5%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+#about{
+    max-height: 90vh;
+    max-width: 90vw;
+    text-align: center;
+    border: 1px solid #303030e1;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+}
+#submit{
+    border-radius: 4px;
+    max-height: 1.5rem;
+    border: 1px solid #303030e1;
+    background-color: greenyellow;
+    text-transform: uppercase;
+    margin-top: 5%;
+    
