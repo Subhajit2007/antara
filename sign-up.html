@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sign-up</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+*{
+    font-family: 'Roboto Slab', serif;
+    box-sizing: border-box;
+}
+body{
+    background: whitesmoke;
+    padding: 0;
+    margin: 0;
+}
+.outer-container{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(#40a1ffd3,#ffffff );
+}
+.inner-container{
+    position: relative;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 2px 3px 10px black;
+    /* height: 300px;
+     */
+     top: 30%;
+     margin-left: 10%;
+     background: linear-gradient(to top left , #95fff5b1, #ffffff);
+    z-index: 2;
+    
+    
+}
+h1{
+    font-size: 3rem;
+}
+p{
+    color: #121523b9;
+}
+.circle{
+    position: relative;
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: linear-gradient(to top right,white,blue);
+    filter: blur(1px);
+    top: 10%;
+}
+/* media quari */
+
+#back{
+    display: block;
+    text-decoration: none;
+}
+
+    </style>
+</head>
+<body>
+    <div class="outer-container">
+        <div class="inner-container">
+           <form action="">
+                <header>
+            <p>
+                <h1>sign-up</h1>
+                <p>just 30 seconds </p>
+            </p>
+        </header>
+        <main>
+            <p>
+                <label for="user-name">name</label>
+                <input type="text" name="user-name" id="user-name" placeholder="enter your name" required>
+            </p>
+            <p>
+                <label for="user-email">email</label>
+                <input type="email" name="user-email" id="user-email" placeholder="enter your email address" required>
+            </p>
+            <p>
+                <label for="user-password">password</label>
+                <input type="password" name="user-password" id="user-password" placeholder="enter 8 digit password" maxlength="8" required>
+            </p>
+            <p>
+                <input onclick="fun()" type="submit" value="submit">
+            </p>
+        </main>
+        <footer>
+            <p>have you an account? 
+            <a href="sign-in.html">log in</a>
+           <a id="back"href="index.html"><< go back</a>
+            </p>
+             
+        </footer>
+           </form>
+        </div>
+        <div class="circle"></div>
+         
+    </div>
+  
+    </body>
+    <script>
+        
+        function fun() {
+            let userName=document.querySelector("#user-name").value
+            let userEmail = document.querySelector("#user-email").value
+            let userPassword = document.querySelector("#user-password").value
+document.cookie=`userName=${userName}; expires=sat, 30 dec 2023 12:00:00 UTC`;
+document.cookie=`userEmail=${userEmail}; expires=sat, 30 dec 2023 12:00:00 UTC`;
+document.cookie=`userPassword=${userPassword}; expires=sat, 30 dec 2023 12:00:00 UTC`;
+    
+        }
+        
+         
+  
+    </script>
+</html>
